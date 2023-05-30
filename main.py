@@ -36,7 +36,7 @@ elif system == "i":
   else:
     print(f"Your BMI is {BMI}, you are underweight.")
 else:
-  system = input("Please enter either 'i' for Imperial or 'm' for Metric")
+  system = input("Please enter either 'i' for Imperial or 'm' for Metric: ")
   if system == "m":
     height = float(input("enter your height in m: "))
     weight = float(input("enter your weight in kg: "))
