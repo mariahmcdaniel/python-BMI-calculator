@@ -1,0 +1,1 @@
+print("Welcome to the Body Mass Index (BMI) Calculator\n")
