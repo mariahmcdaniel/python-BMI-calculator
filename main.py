@@ -1,9 +1,9 @@
 print("Welcome to the Body Mass Index (BMI) Calculator\n")
 
-system = input("Which system would you like to use?\n Type 'i' for Imperial (pounds/ inches) or 'm' for metric: ")
+system = input("Which system would you like to use?\n Type 'i' for Imperial (pounds/ inches) or 'm' for metric: ").lower()
 
 
-if system == "m" or system == "M":
+if system == "m":
   height = float(input("enter your height in m: "))
   weight = float(input("enter your weight in kg: "))
   BMI = round(weight/(height**2))
@@ -19,7 +19,7 @@ if system == "m" or system == "M":
         print(f"Your BMI is {BMI}, you are clinicaly obese.")
   else:
     print(f"Your BMI is {BMI}, you are underweight.")
-elif system == "i" or system == "I":
+elif system == "i":
   height = float(input("enter your height in inches: "))
   weight = float(input("enter your weight in lbs: "))
   BMI = round((weight/(height**2))*703)
